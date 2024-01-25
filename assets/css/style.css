@@ -1,0 +1,137 @@
+:root {
+  --body-bg-And-keyboard-keys: #38bdf8;
+  --keyboard-container-bg: #fff;
+  --keyboard-container-border : #000;
+  --keyboard-keys-secondary: #fdba74;
+  --keyboard-keys-tertiary: #94a3b8;
+  --keyboard-keys-color : #3f3f46;
+  font-size: 16px;
+}
+
+.body[data-theme= "dark"] {
+  --body-bg-And-keyboard-keys: #64748b;
+  --keyboard-container-bg: #3f3f46;
+  --keyboard-container-border : #fff;
+  --keyboard-keys-secondary: #38bdf8;
+  --keyboard-keys-tertiary: #ef4444;
+  --keyboard-keys-color : #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-bg-And-keyboard-keys);
+  transition: all 1s ease;
+}
+
+.change-theme-btn {
+  width: 4rem;
+  height: 4rem;
+  color: var(--keyboard-container-border);
+  cursor: pointer;
+  background-color: var(--keyboard-container-bg);
+  border: 0.2rem solid var(--keyboard-container-border);
+  filter: drop-shadow(0 0 0.5rem var(--keyboard-container-border));
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+#sun-btn {
+  display: none;
+}
+
+.title {
+  color: var(--keyboard-container-border);
+  text-shadow: 0 0 0.2rem var(--keyboard-keys-color);
+  background-color: var(--keyboard-container-bg);
+  border: 0.1rem solid var(--keyboard-container-border);
+  filter: drop-shadow(0 0 0.5rem var(--keyboard-container-border));
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: all 1s ease;
+}
+
+.display-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 0 0 0.2rem var(--keyboard-container-bg);
+  color: var(--keyboard-container-border);
+}
+
+.keyboard-container {
+  background-color: var(--keyboard-container-bg);
+  border: 0.1rem solid var(--keyboard-container-border);
+  filter: drop-shadow(0 0 0.5rem var(--keyboard-container-border));
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: all 1s ease;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.keyboard__key {
+  background-color: var(--body-bg-And-keyboard-keys);
+  color: var(--keyboard-keys-color);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-shadow: -1px -1px 1px 1px #fff, 1px 1px 1px 1px #00000094;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.keyboard__key--second-color {
+  background-color: var(--keyboard-keys-secondary);
+}
+
+.keyboard__key--third-color {
+  background-color: var(--keyboard-keys-tertiary);
+}
+
+.keyboard__key--size {
+  width: 6rem;
+}
+
+.space {
+  width: 100%;
+}
+
+.hit {
+  animation: hit 0.1s ease;
+}
+
+@keyframes hit {
+  0% {
+    box-shadow: -1px -1px 1px 1px #fff, 1px 1px 1px 1px #00000094;
+  }
+  100% {
+    box-shadow:  -1px -1px 1px 1px #fff inset, 1px 1px 1px 1px #00000094 inset;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/icon/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Virtual Keyboard</title>
+</head>
+<body class="body">
+  <svg id="moon-btn" class="change-theme-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+  </svg>
+  <svg id="sun-btn" class="change-theme-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+  </svg>  
+  <h1 class="title">Virtual Keyboard</h1>
+  <section class="display-view"></section>
+  <section class="keyboard-container">
+    <div class="row">
+      <input type="button" id="Escape" value="Escape" class="keyboard__key keyboard__key--third-color">
+      <input type="button" id="q" value="q" class="keyboard__key">
+      <input type="button" id="w" value="w" class="keyboard__key">
+      <input type="button" id="e" value="e" class="keyboard__key">
+      <input type="button" id="r" value="r" class="keyboard__key">
+      <input type="button" id="t" value="t" class="keyboard__key">
+      <input type="button" id="y" value="y" class="keyboard__key">
+      <input type="button" id="u" value="u" class="keyboard__key">
+      <input type="button" id="i" value="i" class="keyboard__key">
+      <input type="button" id="o" value="o" class="keyboard__key">
+      <input type="button" id="p" value="p" class="keyboard__key">
+      <input type="button" id="Backspace" value="Backspace" class="keyboard__key keyboard__key--second-color keyboard__key--size">
+    </div>
+    <div class="row">
+      <input type="button" id="Tab" value="Tab" class="keyboard__key keyboard__key--second-color">
+      <input type="button" id="a" value="a" class="keyboard__key">
+      <input type="button" id="s" value="s" class="keyboard__key">
+      <input type="button" id="d" value="d" class="keyboard__key">
+      <input type="button" id="f" value="f" class="keyboard__key">
+      <input type="button" id="g" value="g" class="keyboard__key">
+      <input type="button" id="h" value="h" class="keyboard__key">
+      <input type="button" id="j" value="j" class="keyboard__key">
+      <input type="button" id="k" value="k" class="keyboard__key">
+      <input type="button" id="l" value="l" class="keyboard__key">
+      <input type="button" id=";" value=";" class="keyboard__key">
+      <input type="button" id="Enter" value="Enter" class="keyboard__key keyboard__key--third-color keyboard__key--size">
+    </div>
+    <div class="row">
+      <input type="button" id="Shift" value="Shift" class="keyboard__key keyboard__key--second-color keyboard__key--size">
+      <input type="button" id="\" value="\" class="keyboard__key">
+      <input type="button" id="z" value="z" class="keyboard__key">
+      <input type="button" id="x" value="x" class="keyboard__key">
+      <input type="button" id="c" value="c" class="keyboard__key">
+      <input type="button" id="v" value="v" class="keyboard__key">
+      <input type="button" id="b" value="b" class="keyboard__key">
+      <input type="button" id="n" value="n" class="keyboard__key">
+      <input type="button" id="m" value="m" class="keyboard__key">
+      <input type="button" id="/" value="/" class="keyboard__key">
+      <input type="button" id="Shift" value="Shift" class="keyboard__key keyboard__key--second-color keyboard__key--size">
+    </div>
+    <input type="button" id=" " value="Space" class="keyboard__key keyboard__key--second-color space">
+  </section>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
