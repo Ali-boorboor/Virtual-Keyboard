@@ -73,6 +73,7 @@
   height: 4rem;
   overflow: hidden;
   font-weight: bold;
+  text-transform: capitalize;
   font-size: 2rem;
   text-shadow: 0 0 0.2rem var(--keyboard-container-bg);
   color: var(--keyboard-container-border);
