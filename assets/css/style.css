@@ -1,5 +1,5 @@
 :root {
-  --body-bg-And-keyboard-keys: #38bdf8;
+  --body-bg-And-keyboard-keys: #7dd3fc;
   --keyboard-container-bg: #fff;
   --keyboard-container-border : #000;
   --keyboard-keys-secondary: #fdba74;
@@ -12,7 +12,7 @@
   --body-bg-And-keyboard-keys: #64748b;
   --keyboard-container-bg: #3f3f46;
   --keyboard-container-border : #fff;
-  --keyboard-keys-secondary: #38bdf8;
+  --keyboard-keys-secondary: #7dd3fc;
   --keyboard-keys-tertiary: #ef4444;
   --keyboard-keys-color : #fff;
 }
@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--body-bg-And-keyboard-keys);
+  background: url("../imgs/falling-triangles.svg") var(--body-bg-And-keyboard-keys);
   transition: all 1s ease;
 }
 
@@ -65,14 +65,21 @@
 
 .display-view {
   display: flex;
+  opacity: 0;
+  transition: all 1s ease;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  text-transform: capitalize;
+  width: 50%;
+  height: 4rem;
+  overflow: hidden;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-shadow: 0 0 0.2rem var(--keyboard-container-bg);
   color: var(--keyboard-container-border);
+  padding: 1rem;
+  background-color: var(--keyboard-container-bg);
+  border: 0.2rem solid var(--keyboard-container-border);
+  filter: drop-shadow(0 0 0.5rem var(--keyboard-container-border));
 }
 
 .keyboard-container {
