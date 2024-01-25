@@ -6,6 +6,7 @@ const sunBtn = $.getElementById ( "sun-btn" );
 
 
 function keyPressFunction (key) {
+  displayView.style.opacity = "1";
   if (key === "Space") {
     displayView.innerHTML += "\&nbsp";
   } else if (key === "Backspace") {
