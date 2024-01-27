@@ -1,5 +1,6 @@
 # Virtual Keyboard
 ## Just a little keyboard with dark and light mode with pure js.
+>> ! this project is not responsive !<br>
 > Try free Demo <a href="https://ali-boorboor.github.io/Virtual-Keyboard/">Here</a>
 ## Used tech:
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
